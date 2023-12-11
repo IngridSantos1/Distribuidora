@@ -1,0 +1,31 @@
+POST http://localhost:3333/lubrificante
+Content-Type: application/json
+
+{
+    "nome": "Top Turbo 15w-40",
+    "marca": "Lubrax",
+    "litros": 20
+}
+
+###
+
+GET http://localhost:3333/lubrificante
+
+###
+
+GET http://localhost:3333/lubrificante?search=Top Turbo
+
+###
+
+PUT http://localhost:3333/lubrificante/c43129f8-22c1-4bd9-996d-43b67cce6ce5
+Content-Type: application/json
+
+{
+    "nome": "20w50",
+    "marca": "Mobil",
+    "litros": 1
+}
+
+###
+
+DELETE http://localhost:3333/lubrificante/3e64a171-be6c-4b15-ba4f-2b6ac86e5e96
